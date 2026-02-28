@@ -1,0 +1,466 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RevaldoGP - Portfolio</title>
+    
+     <!-- Tailwind CSS CDN  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+     <!-- AOS Animation Library  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+     <!-- Google Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        body {
+            background-color: #0a0a0a;
+            color: #ffffff;
+        }
+        
+        .gradient-text {
+            background: linear-gradient(90deg, #FFD700 0%, #FFA500 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .btn-primary {
+            background-color: #FFD700;
+            color: #000000;
+            font-weight: 600;
+            padding: 12px 32px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            background-color: #FFA500;
+            transform: translateY(-2px);
+        }
+        
+        .nav-link {
+            color: #ffffff;
+            font-size: 14px;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        
+        .nav-link:hover {
+            color: #FFD700;
+        }
+        
+        .card-dark {
+            background-color: #1a1a1a;
+            border: 1px solid #2a2a2a;
+            border-radius: 8px;
+            padding: 24px;
+            transition: all 0.3s ease;
+        }
+        
+        .card-dark:hover {
+            border-color: #FFD700;
+            transform: translateY(-4px);
+        }
+        
+        .star-rating {
+            color: #FFD700;
+        }
+        
+        .section-title {
+            font-size: 48px;
+            font-weight: 800;
+            line-height: 1.2;
+        }
+        
+        @media (max-width: 768px) {
+            .section-title {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+     <!-- Navigation  -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-md border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center space-x-2">
+                    <div class="w-8 h-8 bg-yellow-400 rounded flex items-center justify-center">
+                        <span class="text-black font-bold text-sm">RGP</span>
+                    </div>
+                    <span class="text-white font-semibold">Portfolio</span>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="nav-link">HOME</a>
+                    <a href="#about" class="nav-link">ABOUT</a>
+                    <a href="#portfolio" class="nav-link">PORTFOLIO</a>
+                    <a href="#contact" class="nav-link">CONTACT</a>
+                </div>
+                
+                <button class="md:hidden text-white">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+     <!-- Hero Section  -->
+    <section id="home" class="min-h-screen flex items-center pt-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto w-full">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div data-aos="fade-right">
+                    <p class="text-gray-400 text-sm mb-4 tracking-wider">INTERNSHIP</p>
+                    <h1 class="section-title mb-6">
+                        Revaldo Gracio Pasongli
+                    </h1>
+                    <div class="flex flex-wrap gap-4 mb-8 text-sm text-gray-400">
+                        <span>FrontEnd Developer</span>
+                        <span>•</span>
+                        <span>BackEnd Developer</span>
+                        <span>•</span>
+                        <span>UI/UX Designer</span>
+                    </div>
+                    <p class="text-gray-300 mb-8 leading-relaxed max-w-xl">
+                        I am an Informatics Engineering student with a strong interest in Fullstack Web Development and Artificial Intelligence. 
+I have experience building web-based systems, developing backend logic, and managing databases. 
+I enjoy turning ideas into functional and efficient digital solutions while continuously improving my technical skills.
+                    </p>
+                    <button class="btn-primary">DOWNLOAD MY CV</button>
+                    
+                </div>
+                
+                <div data-aos="fade-left" class="flex justify-center">
+                    <div class="relative">
+                        <img src="https://plus.unsplash.com/premium_photo-1664533227571-cb18551cac82?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fG1hbnxlbnwwfHwwfHx8MA%3D%3D?height=500&width=400" alt="Yaziddev" class="rounded-lg w-full max-w-md h-[500px]">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section 01 -->
+<section id="about" class="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-black to-gray-900">
+    <div class="max-w-7xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            
+            <!-- Left Content -->
+            <div data-aos="fade-right">
+                <p class="text-gray-400 text-sm mb-4 tracking-wider">01. About Me</p>
+                <h2 class="section-title mb-6">
+                    Web Developer &<br>
+                    UI/UX Designer
+                </h2>
+                <p class="text-gray-300 mb-8 leading-relaxed">
+                    I am an Informatics Engineering student passionate about building modern web applications 
+                    with clean design and efficient backend systems. I focus on creating responsive user interfaces 
+                    while ensuring strong database structure and system logic on the backend.
+                </p>
+                
+                <!-- Button link ke GitHub FindIt -->
+                <a href="https://github.com/RevaldoGP/FindIt" target="_blank" class="btn-primary">
+                    VIEW PROJECT ON GITHUB
+                </a>
+            </div>
+            
+            <!-- Right Featured Project -->
+            <div data-aos="fade-left" class="relative">
+                <div class="card-dark p-12">
+                    <div class="text-4xl font-bold mb-4 gradient-text">FindIt</div>
+                    <p class="text-gray-400 text-sm mb-2">Campus Lost & Found Platform</p>
+                    <p class="text-gray-500 text-xs">
+                        A web-based lost and found platform designed for campus use. 
+                        Users can report lost items, submit found items, and manage claim verification 
+                        through a structured database system and role-based access control.
+                    </p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+     <!-- About Section 02 -->
+<section class="py-20 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            
+            <!-- Photo (Tetap Ada) -->
+            <div data-aos="fade-right" class="order-2 md:order-1">
+                <img src="https://images.unsplash.com/flagged/photo-1595514191830-3e96a518989b?w=500&auto=format&fit=crop&q=60"
+                     alt="About Me"
+                     class="rounded-lg w-full h-[500px] object-cover">
+            </div>
+            
+            <!-- Content -->
+            <div data-aos="fade-left" class="order-1 md:order-2">
+                <p class="text-gray-400 text-sm mb-4 tracking-wider">02. My Development Journey</p>
+                <h2 class="section-title mb-6">
+                    Building Systems with<br>
+                    Logic & Structure
+                </h2>
+                <p class="text-gray-300 mb-8 leading-relaxed">
+                    Throughout my academic journey, I have developed several web-based systems including 
+                    e-commerce platforms, lost n found platforms, and database-driven applications. 
+                    I continuously improve my skills in backend development, database management, 
+                    and system architecture while exploring artificial intelligence and automation technologies.
+                </p>
+                
+                <a href="#portfolio" class="btn-primary">
+                    VIEW MY OTHER PROJECTS
+                </a>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+     <!-- Experience Section  -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-black to-gray-900">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-12">
+                <div data-aos="fade-right">
+                    <p class="text-gray-400 text-sm mb-4 tracking-wider">03. Experience</p>
+                    <h2 class="text-4xl font-bold mb-8">My Project Experience</h2>
+                    
+                    <div class="space-y-6">
+                        <div class="card-dark flex justify-between items-center">
+                            <div>
+                                <h3 class="text-xl font-semibold mb-1">Fullstack Developer</h3>
+                                <p class="text-gray-400 text-sm">MysticPuff</p>
+                            </div>
+                            <span class="text-yellow-400 font-semibold">3rd Semester</span>
+                        </div>
+                        
+                        <div class="card-dark flex justify-between items-center">
+                            <div>
+                                <h3 class="text-xl font-semibold mb-1">BackEnd Developer</h3>
+                                <p class="text-gray-400 text-sm">TitikBersih</p>
+                            </div>
+                            <span class="text-yellow-400 font-semibold">4th Semester</span>
+                        </div>
+                        
+                        <div class="card-dark flex justify-between items-center">
+                            <div>
+                                <h3 class="text-xl font-semibold mb-1">FullStack Developer</h3>
+                                <p class="text-gray-400 text-sm">FindIt</p>
+                            </div>
+                            <span class="text-yellow-400 font-semibold">5th Semester</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div data-aos="fade-left">
+                    <p class="text-gray-400 text-sm mb-4 tracking-wider">04. Education</p>
+                    <h2 class="text-4xl font-bold mb-8">My Education</h2>
+                    
+                    <div class="space-y-6">
+                        <!-- SMP Negeri 139 Jakarta -->
+<a href="https://share.google/uIfnSw2ceICT5vJdj" target="_blank"
+   class="card-dark flex justify-between items-center block hover:scale-[1.02] transition duration-300">
+    <div>
+        <h3 class="text-xl font-semibold mb-1">SMP Negeri 139 Jakarta</h3>
+    </div>
+    <span class="text-yellow-400 font-semibold">2017-2020</span>
+</a>
+
+<!-- SMA Budhaya 2 Santo Agustinus -->
+<a href="https://share.google/CajCwfkKKveoI82TW" target="_blank"
+   class="card-dark flex justify-between items-center block hover:scale-[1.02] transition duration-300">
+    <div>
+        <h3 class="text-xl font-semibold mb-1">SMA Budhaya 2 Santo Agustinus</h3>
+        <p class="text-gray-400 text-sm">IPA (Ilmu Pengetahuan Alam)</p>
+    </div>
+    <span class="text-yellow-400 font-semibold">2020-2023</span>
+</a>
+
+<!-- Universitas Esa Unggul -->
+<a href="https://share.google/3ofXhH0sVNoifIuJc" target="_blank"
+   class="card-dark flex justify-between items-center block hover:scale-[1.02] transition duration-300">
+    <div>
+        <h3 class="text-xl font-semibold mb-1">Universitas Esa Unggul</h3>
+        <p class="text-gray-400 text-sm">Teknik Informatika</p>
+        <p class="text-gray-400 text-sm">IPK : 3.49/4.00</p>
+    </div>
+    <span class="text-yellow-400 font-semibold">2023-Now</span>
+</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Portfolio Section  -->
+    <section id="portfolio" class="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-black to-gray-900">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-12" data-aos="fade-up">
+                <p class="text-gray-400 text-sm mb-4 tracking-wider">05. Recent Work</p>
+                <h2 class="section-title mb-4">
+                    Showcasing My Work of Art
+                </h2>
+                <p class="text-gray-400 max-w-2xl">
+                     A collection of web applications and interface designs I developed,
+                covering backend systems, database architecture, and user experience design.
+                </p>
+                <a href="https://github.com/RevaldoGP" target="_blank" class="btn-primary mt-6 inline-block">
+    VIEW MY GITHUB
+</a>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-6">
+
+    <!-- MysticPuff -->
+    <a href="https://github.com/RevaldoGP/MysticPuff" target="_blank" 
+       class="card-dark group block" data-aos="fade-up" data-aos-delay="100">
+        <img src="images/mysticpuff.jpg" alt="MysticPuff E-Commerce" class="w-full rounded-lg mb-4">
+        <h3 class="text-2xl font-bold mb-2 group-hover:text-yellow-400 transition-colors">
+            MysticPuff
+        </h3>
+        <p class="text-gray-400 text-sm">
+            Web-based e-commerce platform for electronic cigarettes and liquid products,
+            featuring product management, cart system, transactions, and user authentication.
+        </p>
+    </a>
+
+    <!-- TitikBersih -->
+    <a href="https://github.com/RevaldoGP/TitikBersih" target="_blank" 
+       class="card-dark group block" data-aos="fade-up" data-aos-delay="200">
+        <img src="images/titikbersih.jpg" alt="TitikBersih Platform" class="w-full rounded-lg mb-4">
+        <h3 class="text-2xl font-bold mb-2 group-hover:text-yellow-400 transition-colors">
+            TitikBersih
+        </h3>
+        <p class="text-gray-400 text-sm">
+            Interactive web platform for reporting illegal waste locations using
+            map integration and structured location-based database storage.
+        </p>
+    </a>
+
+    <!-- FindIt Web App -->
+    <a href="https://github.com/RevaldoGP/FindIt" target="_blank" 
+       class="card-dark group block" data-aos="fade-up" data-aos-delay="300">
+        <img src="images/findit-web.jpg" alt="FindIt Web Application" class="w-full rounded-lg mb-4">
+        <h3 class="text-2xl font-bold mb-2 group-hover:text-yellow-400 transition-colors">
+            FindIt – Web Application
+        </h3>
+        <p class="text-gray-400 text-sm">
+            Campus lost and found system allowing users to report lost and found items
+            with role-based authentication and claim verification features.
+        </p>
+    </a>
+
+    <!-- FindIt Figma Design -->
+    <a href="https://www.figma.com/design/EXFcAJP9DF6e3cYZhSWaQP/FindIt?node-id=0-1&t=o4SCuqrqqzA1XxgK-1" 
+       target="_blank" 
+       class="card-dark group block" data-aos="fade-up" data-aos-delay="400">
+        <img src="images/findit-figma.jpg" alt="FindIt UI UX Design" class="w-full rounded-lg mb-4">
+        <h3 class="text-2xl font-bold mb-2 group-hover:text-yellow-400 transition-colors">
+            FindIt – UI/UX Design (Figma)
+        </h3>
+        <p class="text-gray-400 text-sm">
+            Complete UI/UX prototype of the FindIt platform including wireframes,
+            high-fidelity mockups, and user flow planning before development.
+        </p>
+    </a>
+
+</div>
+        </div>
+    </section>
+
+     <!-- Footer  -->
+    <footer id="contact" class="py-12 px-4 sm:px-6 lg:px-8 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-8 h-8 bg-yellow-400 rounded flex items-center justify-center">
+                            <span class="text-black font-bold text-sm">RGP</span>
+                        </div>
+                        <span class="text-white font-semibold">Portfolio</span>
+                    </div>
+                    <p class="text-gray-400 text-sm">Creating exceptional digital experiences through design and development.</p>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="#home" class="hover:text-yellow-400">Home</a></li>
+                        <li><a href="#about" class="hover:text-yellow-400">About</a></li>
+                        <li><a href="#portfolio" class="hover:text-yellow-400">Portfolio</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Contact</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li>aldograciopasongli@gmail.com</li>
+                        <li>+62 812-4001-9155</li>
+                        <li>Bekasi, Indonesia</li>
+                    </ul>
+                </div>
+            </div>
+            
+           <div class="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-gray-800">
+    
+    <p class="text-gray-400 text-sm mb-4 md:mb-0">
+        © 2026 RevaldoGP. All rights reserved.
+    </p>
+
+    <div class="flex space-x-6">
+
+        <!-- GitHub -->
+        <a href="https://github.com/RevaldoGP" target="_blank" class="text-gray-400 hover:text-yellow-400 transition-colors">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+            </svg>
+        </a>
+
+        <!-- WhatsApp -->
+        <a href="https://wa.me/6281240019155" target="_blank" class="text-gray-400 hover:text-yellow-400 transition-colors">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 32 32">
+                <path d="M16 .396C7.163.396 0 7.559 0 16.396c0 2.885.753 5.701 2.188 8.168L.081 31.92l7.546-2.072A15.932 15.932 0 0016 32c8.837 0 16-7.163 16-16.004C32 7.559 24.837.396 16 .396zm0 29.09a13.02 13.02 0 01-6.646-1.832l-.477-.283-4.479 1.231 1.196-4.364-.31-.45A13.01 13.01 0 012.99 16.396c0-7.186 5.844-13.03 13.01-13.03 7.187 0 13.03 5.844 13.03 13.03 0 7.187-5.843 13.09-13.03 13.09zm7.234-9.73c-.396-.198-2.345-1.157-2.708-1.287-.363-.132-.627-.198-.891.198-.264.396-1.023 1.287-1.254 1.551-.231.264-.462.297-.858.099-.396-.198-1.671-.616-3.183-1.963-1.176-1.05-1.97-2.345-2.201-2.741-.231-.396-.025-.61.173-.808.178-.177.396-.462.594-.693.198-.231.264-.396.396-.66.132-.264.066-.495-.033-.693-.099-.198-.891-2.147-1.221-2.94-.321-.771-.647-.666-.891-.678l-.759-.013c-.264 0-.693.099-1.056.495-.363.396-1.386 1.353-1.386 3.3 0 1.947 1.419 3.828 1.617 4.092.198.264 2.793 4.267 6.767 5.983.946.409 1.683.653 2.259.835.949.302 1.813.259 2.496.157.761-.113 2.345-.957 2.675-1.881.33-.924.33-1.716.231-1.881-.099-.165-.363-.264-.759-.462z"/>
+            </svg>
+        </a>
+
+    </div>
+</div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+        
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
